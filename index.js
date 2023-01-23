@@ -110,7 +110,7 @@ function contact_infor(){
 
 var typed = new Typed(".auto-type", {
     strings: ["Phuc", "a Software Engingeer"],
-    typeSpeed: 100,
-    backspeed: 150,
+    typeSpeed: 80,
+    backspeed: 20,
     loop: true
 })
