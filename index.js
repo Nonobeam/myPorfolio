@@ -12,18 +12,29 @@ function linkedin(){
 function github(){
     location.assign("https://github.com/Nonobeam");
 }
-function scroll1(){
-    window.scrollTo({
-        top: 750,
-        behavior: "smooth"
-    })
-}
-function scroll2(){
-    window.scrollTo({
-        top: 1950,
-        behavior: "smooth"
-    })
-}
+
+window.addEventListener('scroll', () =>{
+    const scrolled = window.scrollY;
+    console.log(scrolled);
+    if (scrolled > 280 ){
+        window.scrollTo({
+            top: 1200,
+            behavior:"smooth"
+        })
+    }
+})
+// function scroll1(){
+//     window.scrollTo({
+//         top: 750,
+//         behavior: "smooth"
+//     })
+// }
+// function scroll2(){
+//     window.scrollTo({
+//         top: 1950,
+//         behavior: "smooth"
+//     })
+// }
 // const content1 = document.querySelector('content1')
 // const content2 = document.querySelector('content2')
 // window.addEventListener('Scroll', () =>{
@@ -36,45 +47,45 @@ function scroll2(){
 //     }
 // })
 
-$(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    $(".container_ava img").css({
-    // "-webkit-filter": "blur(" + (scroll/100) + "px)",
-    filter: "blur(" + (scroll/40) + "px)"
-    })
-})
+// $(window).scroll(function(){
+//     var scroll = $(window).scrollTop();
+//     $(".container_ava img").css({
+//     // "-webkit-filter": "blur(" + (scroll/100) + "px)",
+//     filter: "blur(" + (scroll/40) + "px)"
+//     })
+// })
 
-$(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    $(".hi p").css({
-    // "-webkit-filter": "blur(" + (scroll/100) + "px)",
-    filter: "blur(" + (scroll/40) + "px)"
-    })
-})
+// $(window).scroll(function(){
+//     var scroll = $(window).scrollTop();
+//     $(".hi p").css({
+//     // "-webkit-filter": "blur(" + (scroll/100) + "px)",
+//     filter: "blur(" + (scroll/40) + "px)"
+//     })
+// })
 
-$(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    $(".individual_infor").css({
-    // "-webkit-filter": "blur(" + (scroll/100) + "px)",
-    filter: "blur(" + (scroll/40) + "px)"
-    })
-})
+// $(window).scroll(function(){
+//     var scroll = $(window).scrollTop();
+//     $(".individual_infor").css({
+//     // "-webkit-filter": "blur(" + (scroll/100) + "px)",
+//     filter: "blur(" + (scroll/40) + "px)"
+//     })
+// })
 
-window.addEventListener('scroll', information);
-function information(){
-    var infor = document.querySelectorAll('.information');
-    for (var i = 0; i < infor.length; i++){
-        var windowheight = window.innerHeight;
-        var infortop = infor[i] .getBoundingClientRect().top;
-        var inforpoint = 420;
+// window.addEventListener('scroll', information);
+// function information(){
+//     var infor = document.querySelectorAll('.information');
+//     for (var i = 0; i < infor.length; i++){
+//         var windowheight = window.innerHeight;
+//         var infortop = infor[i] .getBoundingClientRect().top;
+//         var inforpoint = 420;
         
-        if (infortop < windowheight - inforpoint){
-            infor[i].classList.add('active');
-        }else{
-            infor[i].classList.remove('active');
-        }
-    }
-}
+//         if (infortop < windowheight - inforpoint){
+//             infor[i].classList.add('active');
+//         }else{
+//             infor[i].classList.remove('active');
+//         }
+//     }
+// }
 
 window.addEventListener('scroll', contact_infor);
 function contact_infor(){
