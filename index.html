@@ -7,9 +7,9 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
-        <link rel="icon" type="image/x-icon" href="icon.png"> 
-        <link rel="stylesheet" href="style.css">
-        <script defer src="index.js"></script>
+        <link rel="icon" type="image/x-icon" href="../../resource/images/icon.png"> 
+        <link rel="stylesheet" href="../css/style.css">
+        <script defer src="../js/index.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
         <script src="https://kit.fontawesome.com/05ec024090.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -18,11 +18,12 @@
     <body class="background">
         <div class="co_bg"></div>
 
+        <!-- Menu bar -->
         <ul class="menu-bar">
             <li><a href="https://www.linkedin.com/in/nguyen-huu-phuc-26a091233/">Home</a></li>
-            <li><a href="index2.html">Curriculum Vitae</a></li>
+            <li><a class="C" href="/src/html/index2.html">C</a></li>
             <li><a href="https://github.com/Nonobeam/algorithm">Algorithm</a></li>
-            <li><a href="about.asp">My project</a></li>
+            <li><a class="M" href="about.asp">Project</a></li>
         </ul>
 
         <!-- First welcome -->
@@ -32,22 +33,15 @@
 
         <!-- My avatar -->
         <div class = "container_ava">
-            <img class = "ava" src = "black_white.jpg">
-            <!-- <div class = "border"></div> -->
-            
+            <img class = "ava" src = "/resource/images/black_white.jpg">      
         </div>
         
         <!-- individual infor-->
         <div class = "individual_infor">
-            <div class="individual_infor_tittle">
-                <p>Full name:</p>
-                <p>Date of birth:</p>
-                <p>Email:</p>
-            </div>
             <div class="individual_infor_detail">
-                <p>Nguyen Huu Phuc</p>
-                <p>04-05-2004</p>
-                <p>nguyenhuuthuc0405@gmail.com</p>    
+                <p class="name">Nguyen Huu Phuc</p>
+                <p class="birth">04-05-2004</p>
+                <p class="mail">nguyenhuuthuc0405@gmail.com</p>    
             </div>
         </div>
 
@@ -70,11 +64,13 @@
             </div>
         </div>
 
-        <!-- Some person_infor detail -->
-        <div class ="personal_infor">Or can contact me here</div>
-        <div class ="phone_mail"> Phone: 0799979655 _____ Mail: nguyenhuuthuc0405@gmail.com</div>
+        <a class="page-break"></a>
 
-        
+        <!-- Some person_infor detail -->
+        <div class="final">
+            <div class ="personal_infor">Or can contact me here</div>
+            <div class ="phone_mail"> Phone: 0799979655 _____ Mail: nguyenhuuthuc0405@gmail.com</div>
+        </div>
     </body>
     
 </html>
