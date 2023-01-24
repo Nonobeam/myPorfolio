@@ -13,16 +13,6 @@ function github(){
     location.assign("https://github.com/Nonobeam");
 }
 
-window.addEventListener('scroll', () =>{
-    const scrolled = window.scrollY;
-    console.log(scrolled);
-    if (scrolled > 280 ){
-        window.scrollTo({
-            top: 1200,
-            behavior:"smooth"
-        })
-    }
-})
 // function scroll1(){
 //     window.scrollTo({
 //         top: 750,
